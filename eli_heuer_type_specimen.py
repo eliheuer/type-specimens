@@ -1,10 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from drawBot import *
+
 # set a size for the canvas *792 x 612 pixels
 size(612, 792)
 
 # using the functions width, height and pageCount
 print "width:", width()
 print "height:", height()
-
 print "pageCount:", pageCount()
 print installedFonts()
 
@@ -34,10 +38,14 @@ def grid(origin, width, height, num_x_units, num_y_units):
     for y in range(num_y_units + 1):
         line((0, step_y), (width, step_y))
         step_y += unit_y
-        
-# page 1
-translate(*origin)
-#grid(origin, width, height, num_x_units*2, num_y_units*2)
+###################################################################
+
+           
+##################################################### page 1 - cover
+
+# grid
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
     
 # type 
 openTypeFeatures(pnum=True)
@@ -49,10 +57,12 @@ stroke(None)
 text("Eli Heuer", (-1, 704-32))
 text("Type Specimens", (-1, 704-64))
 text("2011—2016", (-1, 704-96))
+fonrSize(12)
+text("https://github.com/eliheuer/type-specimens/blob/master/eli_heuer_type_specimen.py",  (-1, 0))
 font("Toren-Proportional")
 fontSize(256)
-
-(34, 44)
+ 
+(34, 64)
 rx = -4
 ry = 0
 cfs = 134
@@ -67,11 +77,16 @@ for i in range(24):
     cfs += 24
     rx += 5.7
     ry += 0
+#############################################################
 
+
+
+############################################## page 2 - toren
 newPage()
-# page 2
-translate(*origin)
-#grid(origin, width, height, num_x_units*2, num_y_units*2)
+
+# grid
+#translate(*origin) # grid off
+grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
 
 # type 
 fontSize(12)
@@ -121,19 +136,23 @@ text("X Height: 500", (128+32, 704-48))
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 #text("Release Date: 2014", (256+64, 704-48))
-
 text("72pt", (-1, 704-96))
 font("Toren-Proportional")
 fontSize(72)
 tracking(8)
 lineHeight(50)
-toren_txt_a="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
+Toren_Txt_A="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
 textBox(toren_txt_a, (0, -32, 520, 612))
+###################################################################################
 
+
+################################################################ page 2 - toren mono
 newPage()
 lineHeight(None)
-# page 3 berens
-grid(origin, width, height, num_x_units*2, num_y_units*2)
+
+# grid
+#translate(*origin) # grid off
+grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
 
 # type 
 fontSize(12)
@@ -326,4 +345,4 @@ iso_txt_b="""X"""
 textBox(iso_txt_a, (0, -32, 505, 576))
 
 
-saveImage([u"~/Desktop/Eli_Heuer_Type_Specimen.pdf",])
+saveImage([u"~/type/type-specimens/Eli_Heuer_Type_Specimen.pdf",])
