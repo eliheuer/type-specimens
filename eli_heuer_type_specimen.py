@@ -106,17 +106,21 @@ text("License: SIL Open Font License v1.1", (256+64, 704-32))
 #text("Release Date: 2014", (256+64, 704-48))
 
 text("72pt", (-1, 704-96))
-font("Toren-Proportional")
-fontSize(72)
-tracking(4)
-lineHeight(50)
+text("36pt", (-1, 256))
+
 txt_line_one="""ABCDEFGHIJ"""
-txt_line_two="""KLMNOPQ"""
-txt_line_three="""RSTUVWXYZ"""
-txt_line_four="""abcdefghij"""
-txt_line_five="""klmnopqrs"""
+txt_line_two="""KLMNOPQRS"""
+txt_line_three="""TUVWXYZ"""
+txt_line_four="""abcdefghijk"""
+txt_line_five="""lmnopqrs"""
 txt_line_six="""tuvwxyz"""
 txt_line_seven="""1234567890"""
+txt_line_eight="""industrial grade Tokyo artisanal A.I. soul-delay Chiba systemic gang. apophenia boy shoes plastic nodal point monofilament smart- concrete. fluidity plastic kanji jeans gang shanty town bicycle singularity. Kowloon euro-pop ablative shoes bridge monofilament motion shrine. disposable realism 8-bit otaku industrial grade marketing shrine neural. post- into savant uplink office geodesic disposable refrigerator. vehicle katana physical chrome neural Chiba marketing corrupted. saturation point plastic systema gang franchise 3D-printed rain range-rover. """
+
+font("Toren-Proportional")
+fontSize(72)
+tracking(2)
+lineHeight(50)
 
 textBox(txt_line_one, (1, -32, 520, 612))
 textBox(txt_line_two, (-2, -32, 520, 612-64))
@@ -124,7 +128,11 @@ textBox(txt_line_three, (-2, -32, 520, 612-(64*2)))
 textBox(txt_line_four, (-2, -32, 520, 612-(64*3)))
 textBox(txt_line_five, (0, -32, 520, 612-(64*4)))
 textBox(txt_line_six, (0, -32, 520, 612-(64*5)))
-textBox(txt_line_seven, (0, -32, 520, 612-(64*9)))
+textBox(txt_line_seven, (-4, -32, 520, 612-(64*6)))
+fontSize(36)
+tracking(0)
+lineHeight(50)
+textBox(txt_line_eight, (0, -32, 520, 612-(64*8)))
 
 
 newPage()
