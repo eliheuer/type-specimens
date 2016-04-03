@@ -22,8 +22,8 @@ num_y_units = 22
 
 def grid(origin, width, height, num_x_units, num_y_units):
     translate(*origin)
-    strokeWidth(1)
-    stroke(0.9, 0.9, 0.9)  
+    strokeWidth(0.5)
+    stroke(0.9, 0.1, 0.1)  
     #stroke(1)  
     fill(None)
     
@@ -57,12 +57,12 @@ stroke(None)
 text("Eli Heuer", (-1, 704-32))
 text("Type Specimens", (-1, 704-64))
 text("2011—2016", (-1, 704-96))
-fonrSize(12)
-text("https://github.com/eliheuer/type-specimens/blob/master/eli_heuer_type_specimen.py",  (-1, 0))
+#fontSize(12)
+#rotate(90)
+#text("DrawBot Source: https://github.com/eliheuer/type-specimens/blob/master/eli_heuer_type_specimen.py",  (-1, 0))
 font("Toren-Proportional")
 fontSize(256)
  
-(34, 64)
 rx = -4
 ry = 0
 cfs = 134
@@ -78,7 +78,6 @@ for i in range(24):
     rx += 5.7
     ry += 0
 #############################################################
-
 
 
 ############################################## page 2 - toren
@@ -109,10 +108,24 @@ text("License: SIL Open Font License v1.1", (256+64, 704-32))
 text("72pt", (-1, 704-96))
 font("Toren-Proportional")
 fontSize(72)
-tracking(8)
+tracking(4)
 lineHeight(50)
-toren_txt_a="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
-textBox(toren_txt_a, (0, -32, 520, 612))
+txt_line_one="""ABCDEFGHIJ"""
+txt_line_two="""KLMNOPQ"""
+txt_line_three="""RSTUVWXYZ"""
+txt_line_four="""abcdefghij"""
+txt_line_five="""klmnopqrs"""
+txt_line_six="""tuvwxyz"""
+txt_line_seven="""1234567890"""
+
+textBox(txt_line_one, (1, -32, 520, 612))
+textBox(txt_line_two, (-2, -32, 520, 612-64))
+textBox(txt_line_three, (-2, -32, 520, 612-(64*2)))
+textBox(txt_line_four, (-2, -32, 520, 612-(64*3)))
+textBox(txt_line_five, (0, -32, 520, 612-(64*4)))
+textBox(txt_line_six, (0, -32, 520, 612-(64*5)))
+textBox(txt_line_seven, (0, -32, 520, 612-(64*9)))
+
 
 newPage()
 lineHeight(None)
@@ -141,8 +154,8 @@ font("Toren-Proportional")
 fontSize(72)
 tracking(8)
 lineHeight(50)
-Toren_Txt_A="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
-textBox(toren_txt_a, (0, -32, 520, 612))
+txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
+textBox(txt_line_one, (0, -32, 520, 612))
 ###################################################################################
 
 
@@ -177,8 +190,8 @@ font("BehrensAntiqua-")
 fontSize(72)
 tracking(8)
 lineHeight(50)
-toren_txt_a="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
-textBox(toren_txt_a, (0, -32, 520, 612))
+txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
+textBox(txt_line_one, (0, -32, 520, 612))
 
 newPage()
 lineHeight(None)
@@ -208,8 +221,8 @@ font("UPM256-Regular")
 fontSize(72)
 tracking(0)
 lineHeight(13)
-upm_txt_a="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
-textBox(upm_txt_a, (0, -32, 505, 576))
+txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
+textBox(txt_line_one, (0, -32, 505, 576))
 
 newPage()
 lineHeight(None)
@@ -240,10 +253,10 @@ font("Isotherma-Alpha")
 fontSize(72)
 tracking(16)
 lineHeight(64)
-iso_txt_a="""CEFGHIJKLOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"""
-iso_txt_b="""X"""
-textBox(iso_txt_a, (0, -32, 505, 576))
-textBox(iso_txt_b, (0, -32, 505, 100))
+txt_line_one="""CEFGHIJKLOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"""
+txt_line_two="""X"""
+textBox(txt_line_one, (0, -32, 505, 576))
+textBox(txt_line_two, (0, -32, 505, 100))
 
 newPage()
 lineHeight(None)
@@ -274,9 +287,8 @@ font("MMXIMedium-Regular")
 fontSize(72)
 tracking(0)
 lineHeight(64)
-iso_txt_a="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
-iso_txt_b="""X"""
-textBox(iso_txt_a, (0, -32, 505, 576))
+txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
+textBox(txt_line_one, (0, -32, 505, 576))
 
 newPage()
 lineHeight(None)
@@ -307,9 +319,9 @@ font("MMXIMediumOblique-Regular")
 fontSize(72)
 tracking(0)
 lineHeight(64)
-iso_txt_a="""ABCDEFGHIJKLMN  OPQRSTUVWXYZ abcdefghijklmn  opqrstuvwxyz 1234567890!@#$%^&*()_+"""
+txt_line_one="""ABCDEFGHIJKLMN  OPQRSTUVWXYZ abcdefghijklmn  opqrstuvwxyz 1234567890!@#$%^&*()_+"""
 iso_txt_b="""X"""
-textBox(iso_txt_a, (0, -32, 505, 576))
+textBox(txt_line_one, (0, -32, 505, 576))
 
 newPage()
 lineHeight(None)
@@ -340,9 +352,8 @@ font("MMXIBlack-Regular")
 fontSize(72)
 tracking(0)
 lineHeight(64)
-iso_txt_a="""ABCDEFGHIJK   LMNOPQRST   UVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
-iso_txt_b="""X"""
-textBox(iso_txt_a, (0, -32, 505, 576))
+txt_line_one="""ABCDEFGHIJK   LMNOPQRST   UVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
+textBox(txt_line_one, (0, -32, 505, 576))
 
 
 saveImage([u"~/type/type-specimens/Eli_Heuer_Type_Specimen.pdf",])
