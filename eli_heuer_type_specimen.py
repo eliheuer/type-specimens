@@ -39,13 +39,11 @@ def grid(origin, width, height, num_x_units, num_y_units):
         line((0, step_y), (width, step_y))
         step_y += unit_y
 ###################################################################
-
-           
+          
 ##################################################### page 1 - cover
-
 # grid
-translate(*origin) # grid off
-#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+#translate(*origin) # grid off
+grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
     
 # type 
 openTypeFeatures(pnum=True)
@@ -79,13 +77,12 @@ for i in range(24):
     ry += 0
 #############################################################
 
-
 ############################################## page 2 - toren
 newPage()
 
 # grid
-translate(*origin) # grid off
-#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+#translate(*origin) # grid off
+grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
 
 # type 
 fontSize(12)
@@ -105,6 +102,8 @@ text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 #text("Release Date: 2014", (256+64, 704-48))
 
+text("72pt", (-1, 704-80))
+
 txt_line_one="""ABCDEFGHIJ"""
 txt_line_two="""KLMNOPQRS"""
 txt_line_three="""TUVWXYZ"""
@@ -112,9 +111,7 @@ txt_line_four="""abcdefghijk"""
 txt_line_five="""lmnopqrs"""
 txt_line_six="""tuvwxyz"""
 txt_line_seven="""1234567890"""
-txt_line_eight="""industrial grade Tokyo artisanal A.I. soul-delay Chiba systemic gang. apophenia boy shoes plastic nodal point monofilament smart- concrete. fluidity plastic kanji jeans gang shanty town bicycle singularity. Kowloon euro-pop ablative shoes bridge monofilament motion shrine. disposable realism 8-bit otaku industrial grade marketing shrine neural. post- into savant uplink office geodesic disposable refrigerator. vehicle katana physical chrome neural Chiba marketing corrupted. saturation point plastic systema gang franchise 3D-printed rain range-rover. """
 
-text("72pt", (-1, 704-80))
 font("Toren-Proportional")
 fontSize(72)
 tracking(0)
@@ -127,14 +124,15 @@ textBox(txt_line_four, (-2, -32, 520, 628-(80*3)))
 textBox(txt_line_five, (0, -32, 520, 628-(80*4)))
 textBox(txt_line_six, (0, -32, 520, 628-(80*5)))
 textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
+lineHeight(None)
 ###############################################################
 
 ################################################ page 3 - toren
 newPage()
 
 # grid
-translate(*origin) # grid off
-#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+#translate(*origin) # grid off
+grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
 
 # type 
 fontSize(12)
@@ -154,6 +152,8 @@ text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 #text("Release Date: 2014", (256+64, 704-48))
 
+text("72pt", (-1, 704-80))
+
 txt_line_one="""ABCDEFGHIJ"""
 txt_line_two="""KLMNOPQRS"""
 txt_line_three="""TUVWXYZ"""
@@ -161,9 +161,7 @@ txt_line_four="""abcdefghijk"""
 txt_line_five="""lmnopqrs"""
 txt_line_six="""tuvwxyz"""
 txt_line_seven="""1234567890"""
-txt_line_eight="""industrial grade Tokyo artisanal A.I. soul-delay Chiba systemic gang. apophenia boy shoes plastic nodal point monofilament smart- concrete. fluidity plastic kanji jeans gang shanty town bicycle singularity. Kowloon euro-pop ablative shoes bridge monofilament motion shrine. disposable realism 8-bit otaku industrial grade marketing shrine neural. post- into savant uplink office geodesic disposable refrigerator. vehicle katana physical chrome neural Chiba marketing corrupted. saturation point plastic systema gang franchise 3D-printed rain range-rover. """
 
-text("72pt", (-1, 704-80))
 font("Toren-Proportional")
 fontSize(72)
 tracking(0)
@@ -178,104 +176,104 @@ textBox(txt_line_six, (0, -32, 520, 628-(80*5)))
 textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
 ###############################################################
 
-# ############################################## page 2 - behrens
-# newPage()
-# lineHeight(None)
+############################################## page 2 - behrens
+newPage()
+lineHeight(None)
 
-# # grid
-# #translate(*origin) # grid off
-# grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+# grid
+#translate(*origin) # grid off
+grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
 
-# # type 
-# fontSize(12)
-# font("Helvetica Neue Bold")
-# tracking(0)
-# fill(0.1, 0.1, 0.1)
-# stroke(None)
-# text("Family Name: Toren", (-1, 704-16))
-# text("Style Name: Regular", (-1, 704-32))
-# text("Release Date: 2014", (-1, 704-48))
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+text("Release Date: 2014", (-1, 704-48))
 
-# text("Units Per Em: 1000", (128+32, 704-16))
-# text("Cap Height: 700", (128+32, 704-32))
-# text("X Height: 500", (128+32, 704-48))
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Cap Height: 700", (128+32, 704-32))
+text("X Height: 500", (128+32, 704-48))
 
-# text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
-# text("License: SIL Open Font License v1.1", (256+64, 704-32))
-# #text("Release Date: 2014", (256+64, 704-48))
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+#text("Release Date: 2014", (256+64, 704-48))
 
-# text("72pt", (-1, 704-96))
-# font("BehrensAntiqua-")
-# fontSize(72)
-# tracking(8)
-# lineHeight(50)
-# txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
-# textBox(txt_line_one, (0, -32, 520, 612))
+text("72pt", (-1, 704-96))
+font("BehrensAntiqua-")
+fontSize(72)
+tracking(8)
+lineHeight(50)
+txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890"""
+textBox(txt_line_one, (0, -32, 520, 612))
 
-# newPage()
-# lineHeight(None)
-# # page 3
-# grid(origin, width, height, num_x_units*2, num_y_units*2)
+newPage()
+lineHeight(None)
+# page 3
+grid(origin, width, height, num_x_units*2, num_y_units*2)
 
-# # type 
-# fontSize(12)
-# font("Helvetica Neue Bold")
-# tracking(0)
-# fill(0.1, 0.1, 0.1)
-# stroke(None)
-# text("Family Name: Toren", (-1, 704-16))
-# text("Style Name: Regular", (-1, 704-32))
-# text("Release Date: 2014", (-1, 704-48))
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+text("Release Date: 2014", (-1, 704-48))
 
-# text("Units Per Em: 1000", (128+32, 704-16))
-# text("Cap Height: 700", (128+32, 704-32))
-# text("X Height: 500", (128+32, 704-48))
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Cap Height: 700", (128+32, 704-32))
+text("X Height: 500", (128+32, 704-48))
 
-# text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
-# text("License: SIL Open Font License v1.1", (256+64, 704-32))
-# #text("Release Date: 2014", (256+64, 704-48))
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+#text("Release Date: 2014", (256+64, 704-48))
 
-# text("72pt", (-1, 704-96))
-# font("UPM256-Regular")
-# fontSize(72)
-# tracking(0)
-# lineHeight(13)
-# txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
-# textBox(txt_line_one, (0, -32, 505, 576))
+text("72pt", (-1, 704-96))
+font("UPM256-Regular")
+fontSize(72)
+tracking(0)
+lineHeight(13)
+txt_line_one="""ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&*()_+"""
+textBox(txt_line_one, (0, -32, 505, 576))
 
-# newPage()
-# lineHeight(None)
-# # page Isotherma-Alpha
-# translate(*origin)
-# #grid(origin, width, height, num_x_units*2, num_y_units*2)
+newPage()
+lineHeight(None)
+# page Isotherma-Alpha
+translate(*origin)
+#grid(origin, width, height, num_x_units*2, num_y_units*2)
 
-# # type 
-# fontSize(12)
-# font("Helvetica Neue Bold")
-# tracking(0)
-# fill(0.1, 0.1, 0.1)
-# stroke(None)
-# text("Family Name: Isotherma", (-1, 704-16))
-# text("Style Name: Regular", (-1, 704-32))
-# text("Release Date: 2014", (-1, 704-48))
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+text("Family Name: Isotherma", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+text("Release Date: 2014", (-1, 704-48))
 
-# text("Units Per Em: 1000", (128+32, 704-16))
-# text("Cap Height: 700", (128+32, 704-32))
-# text("X Height: 500", (128+32, 704-48))
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Cap Height: 700", (128+32, 704-32))
+text("X Height: 500", (128+32, 704-48))
 
-# text("Repo: github.com/eliheuer/isotherma", (256+64, 704-16))
-# text("License: SIL Open Font License v1.1", (256+64, 704-32))
-# #text("Release Date: 2014", (256+64, 704-48))
+text("Repo: github.com/eliheuer/isotherma", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+#text("Release Date: 2014", (256+64, 704-48))
 
-# text("72pt", (-1, 704-96))
-# font("Isotherma-Alpha")
-# fontSize(72)
-# tracking(16)
-# lineHeight(64)
-# txt_line_one="""CEFGHIJKLOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"""
-# txt_line_two="""X"""
-# textBox(txt_line_one, (0, -32, 505, 576))
-# textBox(txt_line_two, (0, -32, 505, 100))
+text("72pt", (-1, 704-96))
+font("Isotherma-Alpha")
+fontSize(72)
+tracking(16)
+lineHeight(64)
+txt_line_one="""CEFGHIJKLOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"""
+txt_line_two="""X"""
+textBox(txt_line_one, (0, -32, 505, 576))
+textBox(txt_line_two, (0, -32, 505, 100))
 
 # newPage()
 # lineHeight(None)
