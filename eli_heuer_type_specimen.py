@@ -92,15 +92,12 @@ fill(0.1, 0.1, 0.1)
 stroke(None)
 text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
-text("Release Date: 2014", (-1, 704-48))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Cap Height: 700", (128+32, 704-32))
-text("X Height: 500", (128+32, 704-48))
+text("Release Date: 2014", (128+32, 704-32))
 
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
-#text("Release Date: 2014", (256+64, 704-48))
 
 text("72pt", (-1, 704-80))
 
@@ -142,22 +139,19 @@ fill(0.1, 0.1, 0.1)
 stroke(None)
 text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
-text("Release Date: 2014", (-1, 704-48))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Cap Height: 700", (128+32, 704-32))
-text("X Height: 500", (128+32, 704-48))
+text("Release Date: 2014", (128+32, 704-32))
 
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
-#text("Release Date: 2014", (256+64, 704-48))
 
 text("72pt", (-1, 704-80))
+text("12pt", (-1, 704-(256+16)))
 
-txt_line_one="""ABCDEFGHIJ"""
-txt_line_two="""KLMNOPQRS"""
-txt_line_three="""TUVWXYZ"""
-txt_line_four="""abcdefghijk"""
+txt_line_one="""Wristwatch Nano"""
+txt_line_two="""Render-farm"""
+txt_line_three="""range-rover hotdog apophenia wristwatch carbon nano- human silent systemic shrine physical otaku industrial grade media Shibuya. motion tiger-team warehouse sentient chrome denim rifle advert sprawl meta- tank-traps paranoid shoes systemic decay. spook camera motion vinyl wonton soup A.I. denim spook gang spook silent towards refrigerator paranoid uplink. soul-delay concrete soul-delay monofilament rifle computer human tiger-team car courier spook bicycle plastic narrative singularity. 8-bit boy nano- stimulate marketing office decay j-pop sunglasses meta- geodesic lights chrome motion construct. towards savant construct decay tiger-team -space semiotics"""
 txt_line_five="""lmnopqrs"""
 txt_line_six="""tuvwxyz"""
 txt_line_seven="""1234567890"""
@@ -169,11 +163,14 @@ lineHeight(50)
 
 textBox(txt_line_one, (1, -32, 520, 628))
 textBox(txt_line_two, (-2, -32, 520, 628-80))
-textBox(txt_line_three, (-2, -32, 520, 628-(80*2)))
-textBox(txt_line_four, (-2, -32, 520, 628-(80*3)))
-textBox(txt_line_five, (0, -32, 520, 628-(80*4)))
-textBox(txt_line_six, (0, -32, 520, 628-(80*5)))
-textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
+
+fontSize(12)
+tracking(0)
+lineHeight(14)
+textBox(txt_line_three, (0, 0, 256+16, (16*27)-4))
+lineHeight(16)
+textBox(txt_line_three, (288, 0, 256+16, (16*27)-4))
+           
 ###############################################################
 
 ############################################## page 2 - behrens
