@@ -361,13 +361,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
+text("Revival: Behrens Antiqua", (-1, 704-16))
+text("Foundry: Klingspor", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Designer: Peter Behrens", (128+32, 704-16))
+text("Release Date: 1907", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("github.com/eliheuer/behrens-antiqua", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -408,17 +408,15 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Revival: Behrens Antiqua", (-1, 704-16))
+text("Foundry: Klingspor", (-1, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Designer: Peter Behrens", (128+32, 704-16))
+text("Release Date: 1907", (128+32, 704-32))
+
+text("github.com/eliheuer/behrens-antiqua", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
-
-text("72pt", (-1, 704-80))
-text("12pt", (-1, 704-(256+16)))
 
 txt_line_one="""Wristwatch Nano"""
 txt_line_two="""Render-farm"""
