@@ -90,7 +90,7 @@ stroke(None)
 text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Year: 2014", (128+32, 704-32))
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 text("72pt", (-1, 704-80))
@@ -134,7 +134,7 @@ text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Year: 2014", (128+32, 704-32))
 
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
@@ -181,7 +181,7 @@ stroke(None)
 text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Mono", (-1, 704-32))
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Year: 2014", (128+32, 704-32))
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 text("72pt", (-1, 704-80))
@@ -225,7 +225,7 @@ stroke(None)
 text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Mono", (-1, 704-32))
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Year: 2014", (128+32, 704-32))
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 text("72pt", (-1, 704-80))
@@ -269,7 +269,7 @@ text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Rotalic", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Year: 2014", (128+32, 704-32))
 
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
@@ -316,7 +316,7 @@ text("Family Name: Toren", (-1, 704-16))
 text("Style Name: Rotalic", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Year: 2014", (128+32, 704-32))
 
 text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
@@ -365,7 +365,7 @@ text("Revival: Behrens Antiqua", (-1, 704-16))
 text("Foundry: Klingspor", (-1, 704-32))
 
 text("Designer: Peter Behrens", (128+32, 704-16))
-text("Release Date: 1907", (128+32, 704-32))
+text("Year: 1907", (128+32, 704-32))
 
 text("github.com/eliheuer/behrens-antiqua", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
@@ -413,10 +413,13 @@ text("Revival: Behrens Antiqua", (-1, 704-16))
 text("Foundry: Klingspor", (-1, 704-32))
 
 text("Designer: Peter Behrens", (128+32, 704-16))
-text("Release Date: 1907", (128+32, 704-32))
+text("Year: 1907", (128+32, 704-32))
 
 text("github.com/eliheuer/behrens-antiqua", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
+
+text("72pt", (-1, 704-80))
+text("12pt", (-1, 704-(256+16)))
 
 txt_line_one="""Wristwatch Nano"""
 txt_line_two="""Render-farm"""
@@ -455,13 +458,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
+text("Family Name: UPM256", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 256", (128+32, 704-16))
+text("Year: 2015", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/upm256", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -502,13 +505,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
+text("Family Name: UPM256", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 256", (128+32, 704-16))
+text("Year: 2014", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/upm256", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -551,24 +554,24 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
+text("Family Name: Isotherma", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
 text("Release Date: 2014", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/isotherma-alpha", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
 
-txt_line_one="""ABCDEFGHIJ"""
-txt_line_two="""KLMNOPQRS"""
-txt_line_three="""TUVWXYZ"""
-txt_line_four="""abcdefghijk"""
-txt_line_five="""lmnopqrs"""
-txt_line_six="""tuvwxyz"""
-txt_line_seven="""1234567890"""
+txt_line_one="""CE"""
+txt_line_two="""abcdefghijk"""
+txt_line_three="""lmnopqrs"""
+txt_line_four="""tuvwxyz"""
+txt_line_five=""""""
+txt_line_six="""  """
+txt_line_seven="""  """
 
 font("Isotherma-Alpha")
 fontSize(72)
@@ -598,13 +601,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
+text("Name: Heuer Schrift", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Release Date: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/HeuerSchrift", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -612,10 +615,10 @@ text("72pt", (-1, 704-80))
 txt_line_one="""ABCDEFGHIJ"""
 txt_line_two="""KLMNOPQRS"""
 txt_line_three="""TUVWXYZ"""
-txt_line_four="""abcdefghijk"""
-txt_line_five="""lmnopqrs"""
-txt_line_six="""tuvwxyz"""
-txt_line_seven="""1234567890"""
+txt_line_four="""1234567890"""
+txt_line_five="""   """
+txt_line_six="""   """
+txt_line_seven="""   """
 
 font("HeuerSchrift-Regular")
 fontSize(72)
@@ -632,7 +635,7 @@ textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
 lineHeight(None)
 ###############################################################
 
-############################################### Nu-Regular
+#################################################### Nu-Regular
 newPage()
 
 # grid
@@ -645,13 +648,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
+text("Family Name: Moves", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Release Date: 2012", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/moves", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -692,13 +695,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
+text("Family Name: Fony", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Release Date: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/fony", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -740,13 +743,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
+text("Family Name: MMXI", (-1, 704-16))
+text("Style Name: Medium", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 2048", (128+32, 704-16))
+text("Release Date: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -787,13 +790,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
+text("Family Name: MMXI", (-1, 704-16))
+text("Style Name: Medium", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 2048", (128+32, 704-16))
+text("Release Date: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -836,13 +839,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
+text("Family Name: MMXI", (-1, 704-16))
+text("Style Name: Med Oblique", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 2048", (128+32, 704-16))
+text("Release Date: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -883,13 +886,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
+text("Family Name: MMXI", (-1, 704-16))
+text("Style Name: Med Oblique", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 2048", (128+32, 704-16))
+text("Release Date: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -932,13 +935,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
+text("Family Name: MMXI", (-1, 704-16))
+text("Style Name: Black", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 2048", (128+32, 704-16))
+text("Release Date: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -979,13 +982,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
-text("Style Name: Regular", (-1, 704-32))
+text("Family Name: MMXI", (-1, 704-16))
+text("Style Name: Black", (-1, 704-32))
 
-text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2014", (128+32, 704-32))
+text("Units Per Em: 2048", (128+32, 704-16))
+text("Year: 2013", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -1028,13 +1031,13 @@ font("Helvetica Neue Bold")
 tracking(0)
 fill(0.1, 0.1, 0.1)
 stroke(None)
-text("Family Name: Toren", (-1, 704-16))
+text("Family Name: Ashley", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
 text("Release Date: 2014", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("Repo: None", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
@@ -1078,16 +1081,6 @@ stroke(None)
 text("Colophon:", (-1, 704-16))
 text("git repo here: https://github.com/eliheuer/type-specimens", (-1, 704-96))
 
-
-
-
-
-font("Ashler")
-fontSize(72)
-tracking(0)
-lineHeight(50)
-
 ###############################################################
 
-# MMXIBlack-Regular
 saveImage([u"~/type/type-specimens/Eli_Heuer_Type_Specimen.pdf",])
