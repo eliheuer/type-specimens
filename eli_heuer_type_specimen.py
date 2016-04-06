@@ -437,6 +437,7 @@ txt_line_seven="""1234567890"""
 font("BehrensAntiqua-Regular")
 fontSize(72)
 tracking(0)
+hyphenation(True)
 lineHeight(50)
 
 ba_pos = 624
