@@ -517,7 +517,7 @@ text("Family Name: UPM256", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 256", (128+32, 704-16))
-text("Year: 2014", (128+32, 704-32))
+text("Year: 2015", (128+32, 704-32))
 
 text("Repo: github.com/eliheuer/upm256", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
@@ -1077,8 +1077,8 @@ textBox(txt_line_four, (288, 0, 256, (16*26)-4))
 newPage()
 
 # grid
-#translate(*origin) # grid off
-grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
 
 # type 
 fontSize(12)
@@ -1135,8 +1135,8 @@ lineHeight(None)
 newPage()
 
 # grid
-#translate(*origin) # grid off
-grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
 
 # type 
 fontSize(12)
