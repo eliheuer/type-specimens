@@ -103,6 +103,7 @@ txt_line_four="""abcdefghijk"""
 txt_line_five="""lmnopqrs"""
 txt_line_six="""tuvwxyz"""
 txt_line_seven="""1234567890"""
+txt_line_eight="""!?ß&*,.;:"""
 
 font("Toren-Proportional")
 fontSize(72)
@@ -115,6 +116,7 @@ textBox(txt_line_four, (-2, -32, 520, 628-(80*3)))
 textBox(txt_line_five, (0, -32, 520, 628-(80*4)))
 textBox(txt_line_six, (0, -32, 520, 628-(80*5)))
 textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
+textBox(txt_line_eight, (-6, -32, 520, 628-(80*7)))
 lineHeight(None)
 ###############################################################
 
@@ -141,29 +143,359 @@ text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
-text("11pt", (-1, 704-(256+16)))
+text("36pt", (-1, 704-(256+16)))
+text("11pt", (-1, 704-(512)))
 
-txt_line_one="""Wristwatch"""
-txt_line_two="""Render-farm"""
-txt_line_three="""GNU, which stands for Gnu's Not Unix, is the name for the complete Unix-compatible software system which I am writing so that I can give it away free to everyone who can use it. Several other volunteers are helping me. Contributions of time, money, programs and equipment are greatly needed. So far we have an Emacs text editor with Lisp for writing editor commands, a source level debugger, a yacc compatible parser generator, a linker, and around 35 utilities. A shell (command interpreter) is nearly completed. A new portable optimizing C compiler has compiled itself and may be released this year. An initial kernel exists but many more features are needed to emulate Unix. When the kernel and compiler are finished, it will be possible to distribute a GNU system suitable for program development. We will use TeX as our text formatter, but an nroff is being worked on. We will use the free, portable X Window System as well. After this we will add a portable Common Lisp, an Empire game, a spreadsheet, and hundreds of other things, plus online documentation. We hope to supply, eventually, everything useful that normally comes with a Unix system, and more. GNU will be able to run Unix programs, but will not be identical to Unix. We will make all improvements that are convenient, based on our experience with other operating systems. In particular, we plan to have longer file names, file version numbers, a crashproof file system, file name completion perhaps, terminal-independent display support, and perhaps eventually a Lisp-based window system through which several Lisp programs and ordinary Unix programs can share a screen."""
-txt_line_four="""Mathematics books and journals do not look as beautiful as they used to. It is not that their mathematical content is unsatisfactory, rather that the old and well-developed traditions of typesetting have become too expensive. Fortunately, it now appears that mathematics itself can be used to solve this problem. A first step in the solution is to devise a method for unambiguously specifying mathematical manuscripts in such a way that they can easily be manipulated by machines. Such languages, when properly designed, can be learned quickly by authors and their typists, yet manuscripts in this form will lead directly to high quality plates for the printer with little or no human intervention. A second step in the solution makes use of classical mathematics to design the shapes of the letters and symbols themselves. It is possible to give a rigorous definition of the exact shape of the letter "a", for example, in such a way that infinitely many styles (bold, extended, sans-serif, italic, etc.) are obtained from a single definition by changing only a few parameters. When the same is done for the other letters and symbols, we obtain a mathematical definition of type fonts, a definition that can be used on all machines both now and in the future. The main significance of this approach is that new symbols can readily be added in such a way that they are automatically consistent with the old ones."""
+txt_line_one="""Mathematical"""
+txt_line_two="""Improvements"""
+txt_line_five="""Emacs Hypertext Rendering"""
+txt_line_six="""Geodesic Happy Hardcore"""
+txt_line_seven="""Tschicholdian algorithms"""
+txt_line_eight="""Open beautiful documents"""
+txt_line_nine="""Functional programming language"""
+txt_line_ten="""Finally, a simple thought struck me. Those letters were designed by people. If I could understand what those people had in their minds when they were drawing the letters, then I could program a computer to carry out the same ideas. Instead of merely copying the form of the letters, my new goal was therefore to copy the intelligence underlying that form. I decided to learn what type designers knew, and to teach that knowledge to a computer. That train of thought led to my computer system called METAFONT, which I want to try to show you now. Here is the way I finally desided to create the letter A, for example, using a computer program."""
 
 font("Toren-Proportional")
 fontSize(72)
-tracking(0)
+tracking(-2)
 lineHeight(50)
-hyphenation(True)
 
-textBox(txt_line_one, (1, -32, 520, 628))
+textBox(txt_line_one, (-1, -32, 520, 628))
 textBox(txt_line_two, (-2, -32, 520, 628-80))
+
+fontSize(36)
+tracking(-1)
+lineHeight(12)
+textBox(txt_line_five, (0, -32, 520, 421))
+textBox(txt_line_six, (0, -32, 520, (421-32)-16))
+textBox(txt_line_seven, (0, -32, 520, (421-64)-32))
+textBox(txt_line_eight, (0, -32, 520, (421-96)-48))
+lineHeight(None)
 
 fontSize(11)
 tracking(0)
 lineHeight(14)
-textBox(txt_line_three, (0, 0, 256-8, (16*26)-4))
+textBox(txt_line_ten, (0, -32, 290, 205))
+lineHeight(None)
+
+###############################################################
+#SabonLTStd-Roman
+######################################### sabon -- page 1
+newPage()
+
+# grid
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Year: 2014", (128+32, 704-32))
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+text("72pt", (-1, 704-80))
+
+txt_line_one="""ABCDEFGHIJ"""
+txt_line_two="""KLMNOPQRS"""
+txt_line_three="""TUVWXYZ"""
+txt_line_four="""abcdefghijk"""
+txt_line_five="""lmnopqrs"""
+txt_line_six="""tuvwxyz"""
+txt_line_seven="""1234567890"""
+txt_line_eight="""!?ß&*,.;:"""
+
+font("SabonLTStd-Roman")
+fontSize(72)
+tracking(0)
+lineHeight(50)
+textBox(txt_line_one, (1, -32, 520, 628))
+textBox(txt_line_two, (-2, -32, 520, 628-80))
+textBox(txt_line_three, (-2, -32, 520, 628-(80*2)))
+textBox(txt_line_four, (-2, -32, 520, 628-(80*3)))
+textBox(txt_line_five, (0, -32, 520, 628-(80*4)))
+textBox(txt_line_six, (0, -32, 520, 628-(80*5)))
+textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
+textBox(txt_line_eight, (-6, -32, 520, 628-(80*7)))
+lineHeight(None)
+###############################################################
+
+############################################## sabon page 2
+newPage()
+
+# grid
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Year: 2014", (128+32, 704-32))
+
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+
+text("72pt", (-1, 704-80))
+text("36pt", (-1, 704-(256+16)))
+text("11pt", (-1, 704-(512)))
+
+txt_line_one="""Mathematical"""
+txt_line_two="""Improvements"""
+txt_line_five="""Emacs Hypertext Rendering"""
+txt_line_six="""Geodesic Happy Hardcore"""
+txt_line_seven="""Tschicholdian algorithms"""
+txt_line_eight="""Open beautiful documents"""
+txt_line_nine="""Functional programming language"""
+txt_line_ten="""Finally, a simple thought struck me. Those letters were designed by people. If I could understand what those people had in their minds when they were drawing the letters, then I could program a computer to carry out the same ideas. Instead of merely copying the form of the letters, my new goal was therefore to copy the intelligence underlying that form. I decided to learn what type designers knew, and to teach that knowledge to a computer. That train of thought led to my computer system called METAFONT, which I want to try to show you now. Here is the way I finally desided to create the letter A, for example, using a computer program."""
+
+font("SabonLTStd-Roman")
+fontSize(72)
+tracking(-2)
+lineHeight(50)
+
+textBox(txt_line_one, (-1, -32, 520, 628))
+textBox(txt_line_two, (-2, -32, 520, 628-80))
+
+fontSize(36)
+tracking(-1)
+lineHeight(12)
+textBox(txt_line_five, (0, -32, 520, 421))
+textBox(txt_line_six, (0, -32, 520, (421-32)-16))
+textBox(txt_line_seven, (0, -32, 520, (421-64)-32))
+textBox(txt_line_eight, (0, -32, 520, (421-96)-48))
+lineHeight(None)
+
+fontSize(11)
+tracking(0)
 lineHeight(14)
-textBox(txt_line_four, (288, 0, 256-8, (16*26)-4))
-           
+textBox(txt_line_ten, (0, -32, 290, 205))
+lineHeight(None)
+
+###############################################################
+
+######################################### Toren-Mono-- page 1
+newPage()
+
+# grid
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Year: 2014", (128+32, 704-32))
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+text("72pt", (-1, 704-80))
+
+txt_line_one="""ABCDEFGHIJ"""
+txt_line_two="""KLMNOPQRS"""
+txt_line_three="""TUVWXYZ"""
+txt_line_four="""abcdefghijk"""
+txt_line_five="""lmnopqrs"""
+txt_line_six="""tuvwxyz"""
+txt_line_seven="""1234567890"""
+txt_line_eight="""!?ß&*,.;:"""
+
+font("Toren-Mono")
+fontSize(72)
+tracking(0)
+lineHeight(50)
+textBox(txt_line_one, (1, -32, 520, 628))
+textBox(txt_line_two, (-2, -32, 520, 628-80))
+textBox(txt_line_three, (-2, -32, 520, 628-(80*2)))
+textBox(txt_line_four, (-2, -32, 520, 628-(80*3)))
+textBox(txt_line_five, (0, -32, 520, 628-(80*4)))
+textBox(txt_line_six, (0, -32, 520, 628-(80*5)))
+textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
+textBox(txt_line_eight, (-6, -32, 520, 628-(80*7)))
+lineHeight(None)
+###############################################################
+
+############################################## Toren-Mono page 2
+newPage()
+
+# grid
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Year: 2014", (128+32, 704-32))
+
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+
+text("72pt", (-1, 704-80))
+text("36pt", (-1, 704-(256+16)))
+text("11pt", (-1, 704-(512)))
+
+txt_line_one="""Mathematical"""
+txt_line_two="""Improvements"""
+txt_line_five="""Emacs Hypertext Rendering"""
+txt_line_six="""Geodesic Happy Hardcore"""
+txt_line_seven="""Tschicholdian algorithms"""
+txt_line_eight="""Open beautiful documents"""
+txt_line_nine="""Functional programming language"""
+txt_line_ten="""Finally, a simple thought struck me. Those letters were designed by people. If I could understand what those people had in their minds when they were drawing the letters, then I could program a computer to carry out the same ideas. Instead of merely copying the form of the letters, my new goal was therefore to copy the intelligence underlying that form. I decided to learn what type designers knew, and to teach that knowledge to a computer. That train of thought led to my computer system called METAFONT, which I want to try to show you now. Here is the way I finally desided to create the letter A, for example, using a computer program."""
+
+font("Toren-Mono")
+fontSize(72)
+tracking(-2)
+lineHeight(50)
+
+textBox(txt_line_one, (-1, -32, 520, 628))
+textBox(txt_line_two, (-2, -32, 520, 628-80))
+
+fontSize(36)
+tracking(-1)
+lineHeight(12)
+textBox(txt_line_five, (0, -32, 520, 421))
+textBox(txt_line_six, (0, -32, 520, (421-32)-16))
+textBox(txt_line_seven, (0, -32, 520, (421-64)-32))
+textBox(txt_line_eight, (0, -32, 520, (421-96)-48))
+lineHeight(None)
+
+fontSize(11)
+tracking(0)
+lineHeight(14)
+textBox(txt_line_ten, (0, -32, 290, 205))
+lineHeight(None)
+
+###############################################################
+
+######################################### Toren-Rotalic -- page 1
+newPage()
+
+# grid
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Year: 2014", (128+32, 704-32))
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+text("72pt", (-1, 704-80))
+
+txt_line_one="""ABCDEFGHIJ"""
+txt_line_two="""KLMNOPQRS"""
+txt_line_three="""TUVWXYZ"""
+txt_line_four="""abcdefghijk"""
+txt_line_five="""lmnopqrs"""
+txt_line_six="""tuvwxyz"""
+txt_line_seven="""1234567890"""
+txt_line_eight="""!?ß&*,.;:"""
+
+font("Toren-Rotalic")
+fontSize(72)
+tracking(0)
+lineHeight(50)
+textBox(txt_line_one, (1, -32, 520, 628))
+textBox(txt_line_two, (-2, -32, 520, 628-80))
+textBox(txt_line_three, (-2, -32, 520, 628-(80*2)))
+textBox(txt_line_four, (-2, -32, 520, 628-(80*3)))
+textBox(txt_line_five, (0, -32, 520, 628-(80*4)))
+textBox(txt_line_six, (0, -32, 520, 628-(80*5)))
+textBox(txt_line_seven, (-6, -32, 520, 628-(80*6)))
+textBox(txt_line_eight, (-6, -32, 520, 628-(80*7)))
+lineHeight(None)
+###############################################################
+
+############################################## Toren-Rotalic page 2
+newPage()
+
+# grid
+translate(*origin) # grid off
+#grid(origin, width, height, num_x_units*2, num_y_units*2) # grid on
+
+# type 
+fontSize(12)
+font("Helvetica Neue Bold")
+tracking(0)
+fill(0.1, 0.1, 0.1)
+stroke(None)
+text("Family Name: Toren", (-1, 704-16))
+text("Style Name: Regular", (-1, 704-32))
+
+text("Units Per Em: 1000", (128+32, 704-16))
+text("Year: 2014", (128+32, 704-32))
+
+text("Repo: github.com/eliheuer/Toren", (256+64, 704-16))
+text("License: SIL Open Font License v1.1", (256+64, 704-32))
+
+text("72pt", (-1, 704-80))
+text("36pt", (-1, 704-(256+16)))
+text("11pt", (-1, 704-(512)))
+
+txt_line_one="""Mathematical"""
+txt_line_two="""Improvements"""
+txt_line_five="""Emacs Hypertext Rendering"""
+txt_line_six="""Geodesic Happy Hardcore"""
+txt_line_seven="""Tschicholdian algorithms"""
+txt_line_eight="""Open beautiful documents"""
+txt_line_nine="""Functional programming language"""
+txt_line_ten="""Finally, a simple thought struck me. Those letters were designed by people. If I could understand what those people had in their minds when they were drawing the letters, then I could program a computer to carry out the same ideas. Instead of merely copying the form of the letters, my new goal was therefore to copy the intelligence underlying that form. I decided to learn what type designers knew, and to teach that knowledge to a computer. That train of thought led to my computer system called METAFONT, which I want to try to show you now. Here is the way I finally desided to create the letter A, for example, using a computer program."""
+
+font("Toren-Rotalic")
+fontSize(72)
+tracking(-2)
+lineHeight(50)
+
+textBox(txt_line_one, (-1, -32, 520, 628))
+textBox(txt_line_two, (-2, -32, 520, 628-80))
+
+fontSize(36)
+tracking(-1)
+lineHeight(12)
+textBox(txt_line_five, (0, -32, 520, 421))
+textBox(txt_line_six, (0, -32, 520, (421-32)-16))
+textBox(txt_line_seven, (0, -32, 520, (421-64)-32))
+textBox(txt_line_eight, (0, -32, 520, (421-96)-48))
+lineHeight(None)
+
+fontSize(11)
+tracking(0)
+lineHeight(14)
+textBox(txt_line_ten, (0, -32, 290, 205))
+lineHeight(None)
+
 ###############################################################
 
 ########################################## toren mono -- page 1
@@ -852,15 +1184,18 @@ text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
-text("11pt", (-1, 704-(256+16)))
+text("36pt", (-1, 704-(256+16)))
+text("12pt", (-1, 704-(512+(16+32))))
 
-txt_line_one="""Wristwatch"""
-txt_line_two="""Render-farm"""
-txt_line_three="""GNU, which stands for Gnu's Not Unix, is the name for the complete Unix-compatible software system which I am writing so that I can give it away free to everyone who can use it. Several other volunteers are helping me. Contributions of time, money, programs and equipment are greatly needed. So far we have an Emacs text editor with Lisp for writing editor commands, a source level debugger, a yacc-compatible parser generator, a linker, and around 35 utilities. A shell (command interpreter) is nearly completed. A new portable optimizing C compiler has compiled itself and may be released this year. An initial kernel exists but many more features are needed to emulate Unix. When the kernel and compiler are finished, it will be possible to distribute a GNU system suitable for program development. We will use TeX as our text formatter, but an nroff is being worked on. We will use the free, portable X Window System as well. After this we will add a portable Common Lisp, an Empire game, a spreadsheet, and hundreds of other things, plus online documentation. We hope to supply, eventually, everything useful that normally comes with a Unix system, and more."""
-txt_line_four="""Mathematics books and journals do not look as beautiful as they used to. It is not that their mathematical content is unsatisfactory, rather that the old and well-developed traditions of typesetting have become too expensive. Fortunately, it now appears that mathematics itself can be used to solve this problem. A first step in the solution is to devise a method for unambiguously specifying mathematical manuscripts in such a way that they can easily be manipulated by machines. Such languages, when properly designed, can be learned quickly by authors and their typists, yet manuscripts in this form will lead directly to high quality plates for the printer with little or no human intervention. A second step in the solution makes use of classical mathematics to design the shapes of the letters and symbols themselves. It is possible to give a rigorous definition of the exact shape of the letter "a", for example, in such a way that infinitely many styles (bold, extended, sans-serif, italic, etc.) are obtained from a single definition by changing only a few parameters. When the same is done for the other letters and symbols, we obtain a mathematical definition of type fonts, a definition that can be used on all machines both now and in the future."""
-txt_line_five="""lmnopqrs"""
-txt_line_six="""tuvwxyz"""
-txt_line_seven="""1234567890"""
+txt_line_one="""Mathematical"""
+txt_line_two="""Artificial"""
+txt_line_five="""Emacs Hypertext Rendering"""
+txt_line_six="""Geodesic Happy Hardcore"""
+txt_line_seven="""Tschicholdian algorithms"""
+txt_line_eight="""Open beautiful documents"""
+txt_line_nine="""Functional programming language"""
+txt_line_ten="""Finally, a simple thought struck me. Those letters were designed by people. If I could understand what those people had in their minds when they were drawing the letters, then I could program a computer to carry out the same ideas. Instead of merely copying the form of the letters, my new goal was therefore to copy the intelligence underlying that form. I decided to learn what type designers knew, and to teach that knowledge to a computer."""
+txt_line_eleven="""Functional programming language"""
 
 font("MMXIMedium-Regular")
 fontSize(72)
@@ -870,12 +1205,21 @@ lineHeight(50)
 textBox(txt_line_one, (1, -32, 520, 628))
 textBox(txt_line_two, (-2, -32, 520, 628-80))
 
-fontSize(11)
+fontSize(36)
 tracking(0)
-lineHeight(14)
-textBox(txt_line_three, (0, 0, 256, (16*26)-4))
-lineHeight(14)
-textBox(txt_line_four, (288, 0, 256, (16*26)-4))
+lineHeight(12)
+textBox(txt_line_five, (0, -32, 520, 422))
+textBox(txt_line_six, (0, -32, 520, (422-32)-16))
+textBox(txt_line_seven, (0, -32, 520, (422-64)-32))
+textBox(txt_line_eight, (0, -32, 520, (422-96)-48))
+textBox(txt_line_nine, (0, -32, 520, (422-128)-64))
+lineHeight(None)
+
+fontSize(12)
+tracking(0)
+lineHeight(15)
+textBox(txt_line_ten, (0, -32, 380, 156))
+lineHeight(None)
            
 ###############################################################
 
@@ -949,15 +1293,18 @@ text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
-text("11pt", (-1, 704-(256+16)))
+text("36pt", (-1, 704-(256+16)))
+text("12pt", (-1, 704-(512+(16+32))))
 
-txt_line_one="""Wristwatch"""
-txt_line_two="""Render-farm"""
-txt_line_three="""GNU, which stands for Gnu's Not Unix, is the name for the complete Unix-compatible software system which I am writing so that I can give it away free to everyone who can use it. Several other volunteers are helping me. Contributions of time, money, programs and equipment are greatly needed. So far we have an Emacs text editor with Lisp for writing editor commands, a source level debugger, a yacc-compatible parser generator, a linker, and around 35 utilities. A shell (command interpreter) is nearly completed. A new portable optimizing C compiler has compiled itself and may be released this year. An initial kernel exists but many more features are needed to emulate Unix. When the kernel and compiler are finished, it will be possible to distribute a GNU system suitable for program development. We will use TeX as our text formatter, but an nroff is being worked on. We will use the free, portable X Window System as well. After this we will add a portable Common Lisp, an Empire game, a spreadsheet, and hundreds of other things, plus online documentation. We hope to supply, eventually, everything useful that normally comes with a Unix system, and more."""
-txt_line_four="""Mathematics books and journals do not look as beautiful as they used to. It is not that their mathematical content is unsatisfactory, rather that the old and well-developed traditions of typesetting have become too expensive. Fortunately, it now appears that mathematics itself can be used to solve this problem. A first step in the solution is to devise a method for unambiguously specifying mathematical manuscripts in such a way that they can easily be manipulated by machines. Such languages, when properly designed, can be learned quickly by authors and their typists, yet manuscripts in this form will lead directly to high quality plates for the printer with little or no human intervention. A second step in the solution makes use of classical mathematics to design the shapes of the letters and symbols themselves. It is possible to give a rigorous definition of the exact shape of the letter "a", for example, in such a way that infinitely many styles (bold, extended, sans-serif, italic, etc.) are obtained from a single definition by changing only a few parameters. When the same is done for the other letters and symbols, we obtain a mathematical definition of type fonts, a definition that can be used on all machines both now and in the future."""
-txt_line_five="""lmnopqrs"""
-txt_line_six="""tuvwxyz"""
-txt_line_seven="""1234567890"""
+txt_line_one="""Mathematical"""
+txt_line_two="""Artificial"""
+txt_line_five="""Emacs Hypertext Rendering"""
+txt_line_six="""Geodesic Happy Hardcore"""
+txt_line_seven="""Tschicholdian algorithms"""
+txt_line_eight="""Open beautiful documents"""
+txt_line_nine="""Functional programming language"""
+txt_line_ten="""Finally, a simple thought struck me. Those letters were designed by people. If I could understand what those people had in their minds when they were drawing the letters, then I could program a computer to carry out the same ideas. Instead of merely copying the form of the letters, my new goal was therefore to copy the intelligence underlying that form. I decided to learn what type designers knew, and to teach that knowledge to a computer."""
+txt_line_eleven="""Functional programming language"""
 
 font("MMXIMediumOblique-Regular")
 fontSize(72)
@@ -967,12 +1314,21 @@ lineHeight(50)
 textBox(txt_line_one, (1, -32, 520, 628))
 textBox(txt_line_two, (-2, -32, 520, 628-80))
 
-fontSize(11)
+fontSize(36)
 tracking(0)
-lineHeight(14)
-textBox(txt_line_three, (0, 0, 256, (16*26)-4))
-lineHeight(14)
-textBox(txt_line_four, (288, 0, 256, (16*26)-4))
+lineHeight(12)
+textBox(txt_line_five, (0, -32, 520, 422))
+textBox(txt_line_six, (0, -32, 520, (422-32)-16))
+textBox(txt_line_seven, (0, -32, 520, (422-64)-32))
+textBox(txt_line_eight, (0, -32, 520, (422-96)-48))
+textBox(txt_line_nine, (0, -32, 520, (422-128)-64))
+lineHeight(None)
+
+fontSize(12)
+tracking(0)
+lineHeight(15)
+textBox(txt_line_ten, (0, -32, 380, 156))
+lineHeight(None)
            
 ###############################################################
 
@@ -1046,15 +1402,18 @@ text("Repo: github.com/eliheuer/MMXI", (256+64, 704-16))
 text("License: SIL Open Font License v1.1", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
-text("11pt", (-1, 704-(256+16)))
+text("36pt", (-1, 704-(256+16)))
+text("12pt", (-1, 704-(512+(16+32))))
 
-txt_line_one="""Wristwatch"""
-txt_line_two="""Render-farm"""
-txt_line_three="""GNU, which stands for Gnu's Not Unix, is the name for the complete Unix-compatible software system which I am writing so that I can give it away free to everyone who can use it. Several other volunteers are helping me. Contributions of time, money, programs and equipment are greatly needed. So far we have an Emacs text editor with Lisp for writing editor commands, a source level debugger, a yacc-compatible parser generator, a linker, and around 35 utilities. A shell (command interpreter) is nearly completed. A new portable optimizing C compiler has compiled itself and may be released this year. An initial kernel exists but many more features are needed to emulate Unix. When the kernel and compiler are finished, it will be possible to distribute a GNU system suitable for program development. We will use TeX as our text formatter, but an nroff is being worked on. We will use the free, portable X Window System as well. After this we will add a portable Common Lisp, an Empire game, a spreadsheet, and hundreds of other things, plus online documentation. We hope to supply, eventually, everything useful that normally comes with a Unix system, and more."""
-txt_line_four="""Mathematics books and journals do not look as beautiful as they used to. It is not that their mathematical content is unsatisfactory, rather that the old and well-developed traditions of typesetting have become too expensive. Fortunately, it now appears that mathematics itself can be used to solve this problem. A first step in the solution is to devise a method for unambiguously specifying mathematical manuscripts in such a way that they can easily be manipulated by machines. Such languages, when properly designed, can be learned quickly by authors and their typists, yet manuscripts in this form will lead directly to high quality plates for the printer with little or no human intervention. A second step in the solution makes use of classical mathematics to design the shapes of the letters and symbols themselves. It is possible to give a rigorous definition of the exact shape of the letter "a", for example, in such a way that infinitely many styles (bold, extended, sans-serif, italic, etc.) are obtained from a single definition by changing only a few parameters. When the same is done for the other letters and symbols, we obtain a mathematical definition of type fonts, a definition that can be used on all machines both now and in the future."""
-txt_line_five="""lmnopqrs"""
-txt_line_six="""tuvwxyz"""
-txt_line_seven="""1234567890"""
+txt_line_one="""Mathematical"""
+txt_line_two="""Artificial"""
+txt_line_five="""Emacs Hypertext Rendering"""
+txt_line_six="""Geodesic Happy Hardcore"""
+txt_line_seven="""Tschicholdian algorithms"""
+txt_line_eight="""Open beautiful documents"""
+txt_line_nine="""Functional programming"""
+txt_line_ten="""Finally, a simple thought struck me. Those letters were designed by people. If I could understand what those people had in their minds when they were drawing the letters, then I could program a computer to carry out the same ideas. Instead of merely copying the form of the letters, my new goal was therefore to copy the intelligence underlying that form. I decided to learn what type designers knew, and to teach that knowledge to a computer."""
+txt_line_eleven="""Functional programming language"""
 
 font("MMXIBlack-Regular")
 fontSize(72)
@@ -1064,13 +1423,21 @@ lineHeight(50)
 textBox(txt_line_one, (1, -32, 520, 628))
 textBox(txt_line_two, (-2, -32, 520, 628-80))
 
-fontSize(11)
+fontSize(36)
 tracking(0)
-lineHeight(14)
-textBox(txt_line_three, (0, 0, 256, (16*26)-4))
-lineHeight(14)
-textBox(txt_line_four, (288, 0, 256, (16*26)-4))
-           
+lineHeight(12)
+textBox(txt_line_five, (0, -32, 520, 422))
+textBox(txt_line_six, (0, -32, 520, (422-32)-16))
+textBox(txt_line_seven, (0, -32, 520, (422-64)-32))
+textBox(txt_line_eight, (0, -32, 520, (422-96)-48))
+textBox(txt_line_nine, (0, -32, 520, (422-128)-64))
+lineHeight(None)
+
+fontSize(12)
+tracking(0)
+lineHeight(15)
+textBox(txt_line_ten, (0, -32, 380, 156))
+lineHeight(None)
 ###############################################################
 
 ############################################### ashley update
@@ -1091,10 +1458,10 @@ text("Family Name: Ashley", (-1, 704-16))
 text("Style Name: Regular", (-1, 704-32))
 
 text("Units Per Em: 1000", (128+32, 704-16))
-text("Release Date: 2011", (128+32, 704-32))
+text("Release Date: 2014", (128+32, 704-32))
 
-text("Repo: github.com/eliheuer/moves", (256+64, 704-16))
-text("License: SIL Open Font License v1.1", (256+64, 704-32))
+text("Repo: None", (256+64, 704-16))
+text("License: None", (256+64, 704-32))
 
 text("72pt", (-1, 704-80))
 text("36pt", (-1, 704-((80*5)+32)))
@@ -1104,10 +1471,10 @@ txt_line_two="""KLMNOPQRS"""
 txt_line_three="""TUVWXYZ"""
 txt_line_four=""" """
 txt_line_five="""THIS FONT WAS"""
-txt_line_six="""DESIGNED BY"""
-txt_line_seven="""ASHLEY W"""
-txt_line_eight="""IN A WORKSHOP"""
-txt_line_nine="""AT POWRPLNT"""
+txt_line_six="""DESIGNED BY ASHLEY"""
+txt_line_seven="""IN A WORKSHOP"""
+txt_line_eight="""ELI TAUGHT AT"""
+txt_line_nine="""POWRPLNT"""
 
 font("Ashley'sFont-Regular")
 fontSize(72)
