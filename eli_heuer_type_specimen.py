@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-
 from drawBot import *
 
 # set a size for the canvas *792 x 612 pixels
